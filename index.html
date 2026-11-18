@@ -38,7 +38,19 @@ body{background:#f3f5f8}
 :root{--rust:#B7410E} .btn{background:#B7410E;border-color:#B7410E;color:white}.btn.alt{background:white;border-color:#B7410E;color:#B7410E}.choice.selected,.card.selected{border-color:#B7410E}.progress>div{background:#B7410E}.notice{border-left-color:#B7410E}.brand{color:#1d2939}.pill{color:#1d2939}.link{color:#B7410E}.content .choice{color:#1d2939}.shell{max-width:none;box-shadow:none}.top{padding:9px 14px}.footer{padding:8px 14px}.content{display:flex;flex-direction:column;gap:10px}.choice{display:flex;align-items:center;gap:12px}.choice .grow{flex:1}.scrolllist{flex:1;min-height:0;overflow:auto}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hide{display:none!important}.field{display:flex;flex-direction:column;gap:6px}.field input,.field select{margin-top:0}.content p{margin:0}.card{display:flex;flex-direction:column;gap:9px}.footer:empty{display:none}.shell{height:100dvh}.top .brand{font-size:1.05rem}.btn.subtle{background:#f6f6f6;color:#1d2939;border-color:#ddd}
 
 .overlay{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;z-index:20;padding:18px}.dialog{background:white;border-radius:16px;max-width:420px;width:100%;padding:24px;box-shadow:0 20px 70px #0003}.scanresult{position:fixed;inset:0;display:none;align-items:center;justify-content:center;color:white;font-size:120px;font-weight:800;z-index:30}.meter{height:12px;border-radius:9px;background:#e5e7eb;overflow:hidden}.log{max-height:200px;overflow:auto;font-size:13px}.overlay.show{display:flex}.scanresult.show{display:flex}.scanresult.ok{background:#17813bdc}.scanresult.bad{background:#c72d32dc}.meter span{display:block;height:100%;background:#B7410E}input[type=range]{width:100%;accent-color:#B7410E}.tag{overflow-wrap:anywhere}
-.big-timer{font-size:clamp(3.6rem,12vw,5rem);font-weight:900;line-height:1.2}.care-stage{display:flex;flex:1;min-height:0;flex-direction:column;gap:10px}.care-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.care-head h1{font-size:clamp(1.2rem,5vw,1.7rem)}.baby-stage{flex:1;min-height:240px;border:2px solid #B7410E;border-radius:22px;background:linear-gradient(160deg,#fff,#f3f3f3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;padding:15px}.baby-stage h2{font-size:1.4rem}.baby-stage p{margin:0}.baby-figure{width:75px;height:75px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#e5ebf3 0 26%,#cbd5e1 27% 100%)}.care-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.care-actions .wide{grid-column:1/-1}.care-actions .btn{min-height:54px}.nfc-indicator{text-align:center;font-weight:650;color:#555}.content:has(.care-stage){display:flex;flex-direction:column;overflow:hidden}.content:has(.care-stage) .care-stage{width:100%}@media(max-height:760px){.baby-stage{min-height:150px;gap:5px}.care-actions .btn{min-height:42px;padding:8px}.baby-figure{width:48px;height:48px}.big-timer{font-size:3rem}} </style></head><body><div id="app"></div><div id="overlay" class="overlay"><div class="dialog" id="dialog"></div></div><div id="scanresult" class="scanresult"></div>
+.big-timer{font-size:clamp(3.6rem,12vw,5rem);font-weight:900;line-height:1.2}.care-stage{display:flex;flex:1;min-height:0;flex-direction:column;gap:10px}.care-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.care-head h1{font-size:clamp(1.2rem,5vw,1.7rem)}.baby-stage{flex:1;min-height:240px;border:2px solid #B7410E;border-radius:22px;background:linear-gradient(160deg,#fff,#f3f3f3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;padding:15px}.baby-stage h2{font-size:1.4rem}.baby-stage p{margin:0}.baby-figure{width:75px;height:75px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#e5ebf3 0 26%,#cbd5e1 27% 100%)}.care-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.care-actions .wide{grid-column:1/-1}.care-actions .btn{min-height:54px}.nfc-indicator{text-align:center;font-weight:650;color:#555}.content:has(.care-stage){display:flex;flex-direction:column;overflow:hidden}.content:has(.care-stage) .care-stage{width:100%}@media(max-height:760px){.baby-stage{min-height:150px;gap:5px}.care-actions .btn{min-height:42px;padding:8px}.baby-figure{width:48px;height:48px}.big-timer{font-size:3rem}} 
+/* Compact, scrollable Working Mode command reference */
+.dialog:has(.work-ref){max-height:min(82dvh,740px);overflow-y:auto;overscroll-behavior:contain;padding:18px}
+.work-ref{display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.45}
+.work-ref h2,.work-ref h3,.work-ref p{margin:0}
+.work-ref h2{font-size:20px}
+.work-ref h3{font-size:16px;margin-top:8px}
+.work-ref-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.work-ref-close{border:0;background:#f3f4f6;border-radius:10px;font-size:25px;width:38px;height:38px;flex-shrink:0}
+.work-command-list{display:flex;flex-wrap:wrap;gap:7px}
+.work-command-list span{background:#fff4ec;border:1px solid #efd2be;border-radius:18px;padding:5px 10px;font-weight:600;font-size:14px}
+.work-ref>.btn{margin-top:8px}
+</style></head><body><div id="app"></div><div id="overlay" class="overlay"><div class="dialog" id="dialog"></div></div><div id="scanresult" class="scanresult"></div>
 <script>
 'use strict';
 const KEY='essazlife-tap-v1', RUST='#B7410E';
@@ -122,20 +134,20 @@ function formatTime(ms){let n=Math.max(0,Math.floor(ms/1000));return String(Math
 function careSoFar(){if(!session)return;modal(`<h2>Care So Far</h2><div class="log">${session.events.map(e=>`<p>${esc(e.time)} — ${esc(e.text)}</p>`).join('')||'<p>No care recorded yet.</p>'}</div><p><button class="btn" onclick="closeModal()">Close</button></p>`)}
 function workingReference(){
  if(!session?.running||session.mode!=='working')return;
- const kind=session.essa.kind;
- const dog=kind==='dog'||kind==='puppy';
  const name=esc(session.essa.name);
- const voice=dog?'bark':'meow';
- modal(`<h2>📖 Working Mode Reference</h2><p class="muted">For ${name} · ${esc(kind)}</p>
- <h3>What ${name} can hear</h3>
- <p>Enable Microphone, then say <b>“${name}?”</b> to get a ${voice} response. You have 30 seconds to give a command; each recognized command refreshes that window. You can also say the name and command together.</p>
- <div class="card"><p><b>Recognized commands</b></p>
- <p><b>Sit</b> · <b>Stay</b> · <b>Focus</b> (also “Watch me” or “Attention”) · <b>Come</b> (also “Here”) · <b>Let's go</b> (also “Heel” or “Walk”) · <b>Good job</b> (also “Good boy,” “Good girl,” or “Well done”) · <b>Potty</b> (also “Toilet,” “Bathroom,” “Go pee,” or “Go poop”).</p>
- <p>Additional commands can be added for each ESSA under <b>Settings → Training Commands</b>.</p><p><b>Potty:</b> ${name} acknowledges with a ${voice}; after about 3 seconds a pee or poop sound plays and the action is logged.</p></div>
- <h3>Care while working</h3><p>${name} won't ask for food, water, or treats during work. You can still offer them through <b>Offer Care / Treat</b> or the handler band. Work stays active until you end the session.</p>
- <p class="muted small">Voice recognition depends on browser support, microphone permission, and accurate speech transcription. It recognizes words, not the speaker's identity.</p>
- <button class="btn" onclick="closeModal()">Close Reference</button>`);
+ const commands=allWorkCommands(session.essa);
+ modal(`<div class="work-ref"><div class="work-ref-head"><h2>📖 Working Reference</h2><button class="work-ref-close" onclick="closeModal()" aria-label="Close reference">×</button></div>
+ <p class="muted">${name} · ${esc(session.essa.kind)}</p>
+ <p><b>Say “${name}”</b> to get a response, then give a command within 30 seconds. You can also say the name and command together.</p>
+ <h3>Recognized commands</h3>
+ <div class="work-command-list">${commands.map(c=>`<span>${esc(c)}</span>`).join('')}</div>
+ <p class="muted small">Also understands: Watch me / Attention (Focus), Here (Come), Heel / Walk (Let's go), Good boy / Good girl / Well done (Good job), and Toilet / Bathroom / Go pee / Go poop (Potty).</p>
+ <p class="muted small">Add personal commands under Settings → Training Commands.</p>
+ <h3>Potty</h3><p>Say “Potty.” ${name} responds, then uses the bathroom after a short delay if needed.</p>
+ <h3>Care during work</h3><p>Food, water, and treats are optional. Use the handler band to offer care or give a manual command.</p>
+ <button class="btn" onclick="closeModal()">Close</button></div>`);
 }
+
 function caregiverId(){if(!session?.running)return;modal(`<h2>Caregiver ID</h2><p>Scan your registered handler band to identify yourself and hold your ESSA.</p><p class="tag">${esc(session.handler.tag)}</p><button class="btn alt" onclick="closeModal()">Close</button>`)}
 function breakSession(){let s=session;if(!s)return;s.paused=!s.paused;if(s.paused){clearTimeout(needTimer);stopAudio()}else{if(s.asleep)setBreathing(true);else if(s.need)vocal();else scheduleNeed()}render()}
 function liveScreen(){if(!session?.running)return home();let s=session;let elapsed=formatTime(Date.now()-s.started),sleeping=s.asleep&&!s.focused;let state=s.mode==='working'?'Working — Awake & Alert':s.focused?'Focused — '+s.focusKind:s.paused?'On Break':sleeping?'ESSA is Asleep':s.need?'ESSA Needs Care':'ESSA is Awake';let instruction=s.mode==='working'?'Say your ESSA’s name, then a command. Routine care requests are muted.':s.focused?'Scan your handler band and leash to finish.':s.paused?'Simulation paused.':sleeping?'Your ESSA is sleeping peacefully.':s.need?'Time to scan handler band':'Waiting for the next care request';let detail=s.mode==='working'?'Heartbeat and awake breathing stay active. Treats, food and water are optional.':s.focused?'Focused state active':s.paused?'Take your time.':sleeping?'Listening for NFC tags':s.held?'Scan the accessory tag or scan your band again for manual entry.':'Scan handler tag.';
